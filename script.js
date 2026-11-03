@@ -167,3 +167,4 @@ on('#imp','change',async e=>{const f=e.target.files[0];if(!f)return;$('#err').te
  }catch(x){$('#err').textContent='Could not import: '+x.message}
  e.target.value=''});
 on('#rst','click',()=>{D=BUILT;cache={};st.sel.clear();st.b='';st.shown=100;fillB();$('#src').textContent='';$('#rst').hidden=true;$('#err').textContent='';render()});
+
